@@ -1,0 +1,9 @@
+version: "3"
+services:
+
+  frontend:
+    build: .
+    image: app/frontend-prod
+    container_name: app-frontend-prod
+    ports:
+      - 8080:80
