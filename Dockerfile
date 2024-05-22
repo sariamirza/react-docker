@@ -2,11 +2,11 @@ FROM node:22.0-alpine as Builder
 
 WORKDIR /app
 
-COPY package.json .
+COPY package.json ./
 
 RUN npm install
 
-COPY . .
+COPY . ./
 
 RUN npm run build
 
